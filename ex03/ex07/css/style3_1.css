@@ -1,0 +1,20 @@
+h1{
+					text-align: center;
+				}
+				div{
+					width: 70%;
+					margin: 20px auto;
+				}
+				p{
+					margin-bottom: 20px;
+				}
+				table{width: 590px;}
+				table td div{padding: 10px; text-align: center;}
+				table .box1{border: none}
+				table .box2{border: 2px solid #ccc}
+				table .box3{border: 2px dotted #ccc}
+				table .box4{border: 2px dashed #ccc}
+				table .box5{border: 5px dashed #ccc}
+				table .box6{border: 5px groove #ccc}
+				table .box7{border: 5px inset #ccc}
+				table .box8{border: 5px outset #ccc}

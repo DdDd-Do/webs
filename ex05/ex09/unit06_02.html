@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>그리드</title>
+  <style>
+    .cnt>div{color: #fff; text-align: center; font-size: 2em;}
+    .cnt>div:nth-child(1){background: #a6b80a;}
+    .cnt>div:nth-child(2){background: #c8ff2f;}
+    .cnt>div:nth-child(3){background: #ffee05;}
+    .cnt>div:nth-child(4){background: #e49503;}
+    .cnt>div:nth-child(5){background: #738a0d;}
+    .cnt>div:nth-child(6){background: #a89d69;}
+    .cnt{
+      display: grid;
+      grid-template-columns: 100px 200px 300px;
+      grid-template-rows: 100px;
+      margin-bottom: 10px;
+    }
+    .cnt1{
+      grid-template-columns:repeat(3, 1fr);
+    }
+    .cnt2{
+      width: 1200px;
+      border: 1px solid #ccc;
+      grid-template-columns:repeat(3, 1fr);
+      font-size: 12px;
+      grid-template-rows: minmax(300px, auto);
+    }
+  </style>
+</head>
+<body>
+    <div class="cnt">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+    </div>
+    <div class="cnt cnt1">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+    </div>
+    <div class="cnt cnt2">
+      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. A saepe nesciunt quasi, recusandae atque odit autem commodi doloribus. Libero reiciendis suscipit rem odit similique consequatur eos ut, sed mollitia autem?</div>
+      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. A saepe nesciunt quasi, recusandae atque odit autem commodi doloribus. Libero reiciendis suscipit rem odit similique consequatur eos ut, sed mollitia autem?</div>
+      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. A saepe nesciunt quasi, recusandae atque odit autem commodi doloribus. Libero reiciendis suscipit rem odit similique consequatur eos ut, sed mollitia autem?</div>
+      <div> Libero reiciendis suscipit rem odit similique consequatur eos ut, sed mollitia autem?</div>
+      <div> adipisicing elit. A saepe nesciunt quasi, recusandae atque odit autem commodi doloribus.  rem odit similique consequatur eos ut, sed mollitia autem?</div>
+      <div>Lsit amet consectetur adipisicing elit. A saepe nesciunt quasi, recusandae atque odit </div>
+    </div>
+</body>
+</html>

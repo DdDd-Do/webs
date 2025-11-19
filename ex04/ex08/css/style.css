@@ -1,0 +1,30 @@
+body{margin: 20px;}
+.box{border: 5px solid #ddd; padding: 20px;}
+
+.container{border: 1px solid #ccc; margin-bottom: 10px;}
+.container>div{
+    padding: 20px 40px;
+    background: #4b922a;
+    width: 200px;
+    margin: 10px;
+}
+.container>div:nth-child(odd){background: #ec7d49;}
+
+#opt1{
+    display: flex;
+    flex-direction: row;
+}
+#opt2{
+    display: flex;
+    flex-direction: row-reverse;
+}
+#opt3{
+    display: flex;
+    flex-direction: row;
+}
+@media screen and (max-width: 1000px) {
+    #opt3{
+        flex-direction:column;
+    }
+}
+    
